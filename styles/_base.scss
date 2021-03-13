@@ -1,0 +1,117 @@
+body {
+  background-color: #eeeeee;
+  font-family: "Open sans", arial, sans-serif;
+  line-height: 1.5rem;
+  color: $black;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+b {
+  font-weight: 600;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+  background-color: $black;
+  width: 2rem;
+  height: 0.2rem;
+  &:nth-of-type(2) {
+    margin: 1rem 0 4rem 0;
+  }
+}
+
+table,
+th,
+td {
+  border: 1px solid $table-border;
+  border-right: none;
+  border-left: none;
+}
+table {
+  width: calc(100% + 100px);
+  margin: auto -50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: initial;
+  text-align: center;
+  background-color: $table-bg;
+
+  li {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-style: italic;
+  }
+}
+
+tr {
+  td {
+    padding: 1rem;
+  }
+  td:nth-child(1) {
+    ul {
+      text-align: left;
+      font-weight: 300;
+      font-size: 0.8rem;
+    }
+    b {
+      margin-bottom: 1rem;
+      display: block;
+    }
+    text-align: right;
+    padding-left: 50px;
+  }
+  td:nth-child(2) {
+    text-align: center;
+    border-left: 1px solid $table-border;
+  }
+}
+footer {
+  margin: 2rem auto;
+  width: fit-content;
+  h2 {
+    text-align: center;
+  }
+  img {
+    height: 40px;
+  }
+  img:nth-of-type(2) {
+    height: 100px;
+  }
+
+  .app-badges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .badges {
+      width: fit-content;
+    }
+  }
+
+  .footer__links {
+    li {
+      display: inline;
+      &::after {
+        content: "|";
+        margin: 0 0 0 0.3rem;
+        color: $black;
+      }
+
+      &:last-child::after {
+        content: none;
+      }
+    }
+    a {
+      color: $accent;
+    }
+  }
+}

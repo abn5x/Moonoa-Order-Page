@@ -1,0 +1,14 @@
+.button {
+  padding: 0.5rem;
+  border: 2px solid $black;
+  border-radius: $radius;
+  width: fit-content;
+  margin: 0.5rem auto;
+  cursor: pointer;
+
+  a {
+    color: $black;
+    text-decoration: none;
+    text-underline-offset: 0.4rem;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <a href="https://www.moonoa.fr"><img class="logo-header" src="./assets/badges/moonoa.png"
+                    alt="Monoa Header"></a>
+            <h2>Bravo {firstname}</h2>
+            <p>Vous avez rejoins le programme {program_type}. Prêt à commencer ?</p>
+            <div class="button"><a href="">Téléchargez l'application Moonoa</a></div>
+            <hr>
+            <p>En fonction de l’analyse de votre sommeil, nous vous contacterons dans les prochains jours pour vous
+                proposer un
+                complément alimentaire adapté à vos besoins. Vous pourrez en changer à tout moment.</p>
+            <hr>
+            <p class="resume-title"><b>Résumé de votre souscription</b></p>
+            <table>
+                <tr>
+                    <td>
+                        <b>{program_name} - 4 mois*</b>
+                        <ul>
+                            <li>
+                                L’accès complet à l’application Moonoa, outil indispensable à votre programme.
+                            </li>
+                            <li>
+                                Le suivi et l’analyse de vos nuits.
+                            </li>
+                            <li>
+                                Le programme Moonoa incluant les challenges et exercices.
+                            </li>
+                            <li>
+                                Des méditations et contenus relaxants en illlimité.
+                            </li>
+                            <li>
+                                Les coaches spécialistes du sommeil à votre écoute.
+                            </li>
+                            <li>
+                                Les compléments alimentaires livrés chez vous
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <p>{total_paid_tax_excl}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Montant TVA 20%</p>
+                    </td>
+                    <td>
+                        <p>{total_tax_paid}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Total payé</p>
+                    </td>
+                    <td>
+                        <p>{total_paid}</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="note">*A la fin des 4 mois, le programme continue au prix de 29,95€ / mois, résiliable à tout
+                moment.</p>
+
+        </div>
+        <div class="container disclaimer">
+            <p>Si vous avez des questions n'hésitez pas à <a href=""><b>nous contacter</b></a>.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="app-badges">
+            <h2><b>Téléchargez App</b></h2>
+            <div class="badges">
+                <a href="https://www.moonoa.fr">
+                    <img src="./assets/badges/apple.svg" alt="App Store Download">
+                </a>
+                <a href="https://www.moonoa.fr">
+                    <img src="./assets/badges/google.png" alt="Google Play Store Download">
+                </a>
+            </div>
+        </div>
+        <div class="footer__links">
+            <ul>
+                <li><a href="">Faq</a></li>
+                <li><a href="">Conditions générales de vente</a></li>
+                <li><a href="">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

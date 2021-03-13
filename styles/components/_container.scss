@@ -1,0 +1,37 @@
+.container {
+  box-shadow: $shadow;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: $radius;
+  max-width: 604px;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+  .note {
+    font-size: 0.8rem;
+    line-height: initial;
+    margin-top: 2rem;
+    font-style: italic;
+    text-align: left;
+  }
+  .logo-header {
+    height: 2rem;
+    margin: -1rem 0 2rem auto;
+    display: block;
+  }
+
+  .resume-title {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  padding: 1rem;
+  font-style: italic;
+  text-align: center;
+  a {
+    color: $link;
+  }
+}
